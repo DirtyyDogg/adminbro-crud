@@ -40,7 +40,7 @@ server.use(adminBroOptions.options.rootPath, router);
 // =============================================
 // Run App
 const run = async () => {
-  await mongoose.connect("mongodb://localhost/adminbroapp", {
+  await mongoose.connect("mongodb://127.0.0.1/adminbroapp", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
